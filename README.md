@@ -15,7 +15,7 @@
 Unit Test 작성하기:local unit test
 
 1. 필수 라이브러리와 설정:build.gradle
-   <pre><code>
+<pre><code>
 dependencies {
   androidTestCompile 'com.android.support:support-annotations:24.0.0'
   androidTestCompile 'com.android.support.test:runner:0.5'
@@ -34,7 +34,7 @@ android {
   testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
 }
-   </code></pre>
+</code></pre>
 
 2. 테스트 코드 작성( ExampleUnitTest 파일에 작성)
   <pre><code>
