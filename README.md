@@ -144,7 +144,7 @@ Gradle이 빌드 과정에서 이 파일을 자동으로 생성(직접 추가도
     Espresso.onView(withId(R.id.hellowTtext)).check(matches(withText("count:1")));
     Espresso.onView(withId(R.id.btnClick)).perform(click());
     Espresso.onView(withId(R.id.hellowTtext)).check(matches(withText("count:2")));
-  }
+  	}
   }
   </pre></code>
 ####Espresso:함수 설명
