@@ -15,8 +15,8 @@
 Unit Test 작성하기:local unit test
 
 1. 필수 라이브러리와 설정:build.gradle
-<pre><code>
-dependencies {
+  <pre><code>
+  dependencies {
   androidTestCompile 'com.android.support:support-annotations:24.0.0'
   androidTestCompile 'com.android.support.test:runner:0.5'
   androidTestCompile 'com.android.support.test:rules:0.5'
@@ -28,15 +28,15 @@ dependencies {
   })
   // Optional -- UI testing with UI Automator
   androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
-}
-android {
+  }
+  android {
   defaultConfig {
   testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
-}
-</code></pre>
+  }
+  </code></pre>
 
-2. <a href https://github.com/Leejigun/Android_Unit_Testing_example/blob/master/Android_unit_test_example/app/src/test/java/com/openit/jglee/android_unit_test_example/ExampleUnitTest.java>테스트 코드 작성( ExampleUnitTest 파일에 작성)</a>
+2. <a href=https://github.com/Leejigun/Android_Unit_Testing_example/blob/master/Android_unit_test_example/app/src/test/java/com/openit/jglee/android_unit_test_example/ExampleUnitTest.java>테스트 코드 작성( ExampleUnitTest 파일에 작성)</a>
   <pre><code>
   public class ExampleUnitTest {
     @BeforeClass
@@ -88,8 +88,8 @@ Gradle이 빌드 과정에서 이 파일을 자동으로 생성(직접 추가도
 
 ### Espresso 사용
 1. 버튼을 누르면 1씩 더해서 표시하는 간단한 동작 구현 (MainActivity.class)
-<pre><code>
-public class MainActivity extends AppCompatActivity {
+  <pre><code>
+  public class MainActivity extends AppCompatActivity {
   TextView txtView;
   Button btnClick;
   int count = 0;
@@ -122,12 +122,12 @@ public class MainActivity extends AppCompatActivity {
     }
     });
   }
-}
+  }
   </pre></code>
-2. 테스트를 진행 할 코드 작성 (ExampleInstrumentedTest.class)
-<pre><code>
-@RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
+2. <a href=https://github.com/Leejigun/Android_Unit_Testing_example/blob/master/Android_unit_test_example/app/src/androidTest/java/com/openit/jglee/android_unit_test_example/ExampleInstrumentedTest.java>테스트를 진행 할 코드 작성 (ExampleInstrumentedTest.class)</a>
+  <pre><code>
+  @RunWith(AndroidJUnit4.class)
+  public class ExampleInstrumentedTest {
   @Rule
   public ActivityTestRule mActivityRule = new ActivityTestRule<>(MainActivity.class);
 
@@ -145,8 +145,8 @@ public class ExampleInstrumentedTest {
     Espresso.onView(withId(R.id.btnClick)).perform(click());
     Espresso.onView(withId(R.id.hellowTtext)).check(matches(withText("count:2")));
   }
-}
-</pre></code>
+  }
+  </pre></code>
 ####Espresso:함수 설명
 * onView : View 처리(TestView, EditText, Button 등)
 * withText : 해당 텍스트 속성으로 가지는 View를 찾음
