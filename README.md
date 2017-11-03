@@ -36,7 +36,7 @@ android {
 }
 </code></pre>
 
-2. 테스트 코드 작성( ExampleUnitTest 파일에 작성)
+2. <a href https://github.com/Leejigun/Android_Unit_Testing_example/blob/master/Android_unit_test_example/app/src/test/java/com/openit/jglee/android_unit_test_example/ExampleUnitTest.java>테스트 코드 작성( ExampleUnitTest 파일에 작성)</a>
   <pre><code>
   public class ExampleUnitTest {
     @BeforeClass
