@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android_unit_test_example</string>
+    <string name="clicked">클릭</string>
+</resources>
